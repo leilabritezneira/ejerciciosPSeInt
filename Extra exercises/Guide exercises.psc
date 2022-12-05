@@ -167,6 +167,21 @@ Proceso Ejxtra exercises
 	SiNo 
 		Escribir Sin Saltar "Reprueba el curso";
 	FinSi
+	
+	//Ejercicio 3 del capitulo 5
+	//Proceso Condicionales
+	
+	Definir compra Como Real;
+	
+	Escribir Sin Saltar "Ingrese el monto de su compra: ";
+	Leer compra;
+	
+	Si compra >=  100 Entonces 
+		compra <- compra - (compra* 0.20);
+		Escribir Sin Saltar "Su monto a pagar es: ", compra;
+	SiNo 
+		Escribir Sin Saltar "Su monto a pagar es: ", compra;
+	FinSi
 
 FinProceso
 
