@@ -146,6 +146,27 @@ Proceso Ejxtra exercises
 	SiNo 
 		Escribir Sin Saltar "Su numero es IMPAR";
 	FinSi
+	
+	/Ejercicio 2 del capitulo 5 
+	//Proceso Condicionales
+	
+	Definir cal1, cal2, cal3 Como Entero;
+	Definir promedio Como Real;
+	
+	Escribir Sin Saltar "Ingrese su primer calificacion: ";
+	Leer cal1;
+	Escribir Sin Saltar "Ingrese su segunda calificacion: ";
+	Leer cal2;
+	Escribir Sin Saltar "Ingrese su tercera calificacion: ";
+	Leer cal3;
+	
+	promedio <- (cal1 + cal2 + cal3) / 3;
+	
+	Si promedio >=  70 Entonces 
+		Escribir Sin Saltar "Aprueba el curso";
+	SiNo 
+		Escribir Sin Saltar "Reprueba el curso";
+	FinSi
 
 FinProceso
 
