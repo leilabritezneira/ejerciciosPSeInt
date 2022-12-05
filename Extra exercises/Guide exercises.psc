@@ -182,6 +182,29 @@ Proceso Ejxtra exercises
 	SiNo 
 		Escribir Sin Saltar "Su monto a pagar es: ", compra;
 	FinSi
+	
+	//Ejercicio 4 de capitulo 5
+	//Proceso Condicionales
+	
+	Definir n1, n2, resultado Como Real;
+	
+	Escribir Sin Saltar "Ingrese el primer número: ";
+	Leer n1;
+	Escribir Sin Saltar "Ingrese el segundo número: ";
+	Leer n2;
+	
+	Si n1 = n2 Entonces 
+		resultado <- n1*n2;
+		Escribir Sin Saltar "El resultado es: ", resultado;
+	SiNo 
+		Si n1 > n2 Entonces
+			resultado <- n1-n2;
+			Escribir Sin Saltar "El resultado es: ", resultado;
+		SiNo 
+			resultado <- n1+n2;
+			Escribir Sin Saltar "El resultado es: ", resultado;
+		FinSi
+	FinSi
 
 FinProceso
 
