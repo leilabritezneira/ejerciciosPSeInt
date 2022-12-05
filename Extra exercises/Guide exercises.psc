@@ -1,4 +1,4 @@
-Proceso Ejercicios
+Proceso Ejxtra exercises
 	//Ejercicio 1 del capitulo 2
 	
 	Definir a, b, c, resultado Como Real;
@@ -133,6 +133,19 @@ Proceso Ejercicios
 	
 	Escribir "Su Calificación Final será: " , calFinal;
 	
+	//Ejercicio 1 del capitulo 5
+	//Proceso Condicionales
+	
+	Definir n Como Entero;
+	
+	Escribir Sin Saltar "Ingrese un número: ";
+	Leer n;
+	
+	Si n MOD 2 = 0 Entonces 
+		Escribir Sin Saltar "Su número es PAR";
+	SiNo 
+		Escribir Sin Saltar "Su numero es IMPAR";
+	FinSi
 
 FinProceso
 
