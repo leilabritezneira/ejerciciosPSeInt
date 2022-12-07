@@ -205,6 +205,31 @@ Proceso Ejxtra exercises
 			Escribir Sin Saltar "El resultado es: ", resultado;
 		FinSi
 	FinSi
+	
+	//Ejercicio 5 del capitulo 5 
+	
+	//Proceso Condicionales
+	
+	Definir n1, n2, n3 Como Real;
+	
+	Escribir Sin Saltar "Ingrese el primer número: ";
+	Leer n1;
+	Escribir Sin Saltar "Ingrese el segundo número: ";
+	Leer n2;
+	Escribir Sin Saltar "Ingrese el tercer número: ";
+	Leer n3;
+	
+	Si n1> n2 y n1> n3 Entonces 
+		
+		Escribir Sin Saltar "El numero mayor es: ", n1;
+	SiNo 
+		Si n2> n1 y n2> n3 Entonces
+			
+			Escribir Sin Saltar "El numero mayor es: ", n2;
+		SiNo 
+			Escribir Sin Saltar "El numero mayor es: ", n3;
+		FinSi
+	FinSi
 
 FinProceso
 
