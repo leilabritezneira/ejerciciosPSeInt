@@ -207,7 +207,6 @@ Proceso Ejxtra exercises
 	FinSi
 	
 	//Ejercicio 5 del capitulo 5 
-	
 	//Proceso Condicionales
 	
 	Definir n1, n2, n3 Como Real;
@@ -230,6 +229,32 @@ Proceso Ejxtra exercises
 			Escribir Sin Saltar "El numero mayor es: ", n3;
 		FinSi
 	FinSi
+	
+	//Ejercicio 6 del capitulo 5 
+	//Proceso Condicionales
+	
+	Definir KG Como Real;
+	
+	Escribir Sin Saltar "Ingrese la cantidad de Kilogramos comprados: ";
+	Leer KG;
+	
+	Si KG<=2 Entonces 
+		Escribir Sin Saltar "Su descuento es de 0%";
+	SiNo 
+		Si KG>=2.01 y KG<=5 Entonces
+			KG<- - (KG*0.10);
+			Escribir Sin Saltar "Su descuento es de  ", KG, " Kilogramos";
+		SiNo 
+			Si KG>=5.01 y KG<=10 Entonces
+				KG<- KG - (KG*0.15);
+				Escribir Sin Saltar "Su descuento es de  ", KG, "Kilogramos";
+			SiNo 
+				KG<- KG - (KG*0.20);
+				Escribir Sin Saltar "Su descuento es de  ", KG, "Kilogramos";
+			FinSi
+		FinSi
+	FinSi
+	
 
 FinProceso
 
