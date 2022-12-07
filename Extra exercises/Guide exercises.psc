@@ -255,6 +255,26 @@ Proceso Ejxtra exercises
 		FinSi
 	FinSi
 	
+	//Ejercicio 7 del capitulo 5	
+	//Proceso Condicionales
+	
+	Definir n Como Entero; 
+	
+	Escribir "Ingrese un numero del día de la semana del 1 al 7: ";
+	Leer n; 
+	
+	Segun n Hacer
+		1: Escribir "Es Lunes";
+		2: Escribir "Es Martes";
+		3: Escribir "Es Miercoles";
+		4: Escribir "Es Jueves";
+		5: Escribir "Es Vieres";
+		6: Escribir "Es Sabado";
+		7: Escribir "Es Domingo";
+		De Otro Modo:
+			Escribir "El numero ingresado no corresponde a ningun día de la semana";
+	FinSegun
+	
 
 FinProceso
 
