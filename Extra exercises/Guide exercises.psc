@@ -293,7 +293,40 @@ Proceso Ejxtra exercises
 			Escribir "La década ingresada no corresponde a ninguna boda";
 	FinSegun
 	
+	//Ejercicio 9 del capitulo 5 
+	//Proceso Condicionales_M
+	Definir opcion Como Entero; 
 	
+	Escribir "Ingrese la opcion deseada del MENU ";
+	Escribir " 1) Elevar a la potencia x de un número x"; 
+	Escribir " 2) Sacar la raíz cuadrada de un número"; 
+	Escribir " 3) Salir";
+	Leer opcion; 
+	
+	Segun opcion Hacer
+		1: 
+			Definir n, potencia, resultado Como Real;
+			Escribir "Ingrese el número a potenciar: ";
+			Leer n; 
+			Escribir "Ingrese la potencia: ";
+			Leer potencia; 
+			
+			resultado <- n^potencia; 
+			Escribir "Su resultado es: ", resultado; 
+			
+		2: 
+			Definir n, resultado Como Real;
+			Escribir "Ingrese el número que desea saber la raíz cuadrada";
+			Leer n;
+			
+			resultado<- raiz(n); 
+			Escribir "Su resultado es: ", resultado; 
+			
+		3: Escribir "Salio del programa";
+			
+		De Otro Modo:
+			Escribir "La opcion ingresada no corresponde al MENU";
+	FinSegun
 	
 	
 FinProceso
