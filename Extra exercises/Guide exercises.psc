@@ -275,7 +275,27 @@ Proceso Ejxtra exercises
 			Escribir "El numero ingresado no corresponde a ningun día de la semana";
 	FinSegun
 	
-
+	//Ejercicio 8 del capitulo 5
+	//Proceso Condicionales
+	Definir n Como Entero; 
+	
+	Escribir "Ingrese década deseada: ";
+	Leer n; 
+	
+	Segun n Hacer
+		10: Escribir "Bodas de Hojalata";
+		20: Escribir "Bodas de Porcelana";
+		30: Escribir "Bodas de Perlas";
+		40: Escribir "Bodas de Rubi";
+		50: Escribir "Bodas de Oro";
+		60: Escribir "Bodas de Diamante";
+		De Otro Modo:
+			Escribir "La década ingresada no corresponde a ninguna boda";
+	FinSegun
+	
+	
+	
+	
 FinProceso
 
 
