@@ -134,7 +134,6 @@ Proceso Ejxtra exercises
 	Escribir "Su Calificación Final será: " , calFinal;
 	
 	//Ejercicio 1 del capitulo 5
-	//Proceso Condicionales
 	
 	Definir n Como Entero;
 	
@@ -148,7 +147,6 @@ Proceso Ejxtra exercises
 	FinSi
 	
 	/Ejercicio 2 del capitulo 5 
-	//Proceso Condicionales
 	
 	Definir cal1, cal2, cal3 Como Entero;
 	Definir promedio Como Real;
@@ -169,7 +167,6 @@ Proceso Ejxtra exercises
 	FinSi
 	
 	//Ejercicio 3 del capitulo 5
-	//Proceso Condicionales
 	
 	Definir compra Como Real;
 	
@@ -184,7 +181,6 @@ Proceso Ejxtra exercises
 	FinSi
 	
 	//Ejercicio 4 de capitulo 5
-	//Proceso Condicionales
 	
 	Definir n1, n2, resultado Como Real;
 	
@@ -207,7 +203,6 @@ Proceso Ejxtra exercises
 	FinSi
 	
 	//Ejercicio 5 del capitulo 5 
-	//Proceso Condicionales
 	
 	Definir n1, n2, n3 Como Real;
 	
@@ -231,7 +226,6 @@ Proceso Ejxtra exercises
 	FinSi
 	
 	//Ejercicio 6 del capitulo 5 
-	//Proceso Condicionales
 	
 	Definir KG Como Real;
 	
@@ -256,7 +250,6 @@ Proceso Ejxtra exercises
 	FinSi
 	
 	//Ejercicio 7 del capitulo 5	
-	//Proceso Condicionales
 	
 	Definir n Como Entero; 
 	
@@ -276,7 +269,7 @@ Proceso Ejxtra exercises
 	FinSegun
 	
 	//Ejercicio 8 del capitulo 5
-	//Proceso Condicionales
+
 	Definir n Como Entero; 
 	
 	Escribir "Ingrese década deseada: ";
@@ -294,7 +287,7 @@ Proceso Ejxtra exercises
 	FinSegun
 	
 	//Ejercicio 9 del capitulo 5 
-	//Proceso Condicionales_M
+
 	Definir opcion Como Entero; 
 	
 	Escribir "Ingrese la opcion deseada del MENU ";
@@ -327,6 +320,20 @@ Proceso Ejxtra exercises
 		De Otro Modo:
 			Escribir "La opcion ingresada no corresponde al MENU";
 	FinSegun
+	
+	//Ejercicio 1 del capitulo 6
+
+	Definir n,resultado, i Como Entero;
+	Escribir 'Ingrese la cantidad deseada a sumar ';
+	Leer n;
+	resultado<- 0;
+	
+	Para  i <- 1 Hasta n Con Paso 1 Hacer
+		resultado <- resultado + i;
+	FinPara
+	
+	Escribir "Su resultado es: ", resultado; 
+    
 	
 	
 FinProceso
