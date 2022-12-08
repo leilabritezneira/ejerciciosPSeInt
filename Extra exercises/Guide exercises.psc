@@ -350,7 +350,33 @@ Proceso Ejxtra exercises
 	Escribir "La suma de pares es: ", pares; 
 	Escribir "La suma de impares es: ", impares;
 	
-    
+	//Ejercicio 3 del capitulo 6 
+
+	Definir n,i como entero;
+	Definir positivos,negativos,neutros como enteros;
+	
+	positivos <- 0;
+	negativos <- 0;
+	neutros <- 0;
+	
+	Para i<-1 Hasta 10 Hacer
+		Escribir i," - Ingrese un numero: ";
+		Leer n;
+		
+		Si n = 0 Entonces
+			neutros <- neutros + 1;
+		SiNo
+			Si n > 0 Entonces
+				positivos <- positivos+1;
+			SiNo
+				negativos <- negativos+1;
+			FinSi
+		FinSi
+	FinPara
+	
+	Escribir "La cantidad de numeros positivos es: ",positivos;
+	Escribir "La cantidad de numeros negativos es: ",negativos;
+	Escribir "La cantidad de numeros neutros es: ",neutros;
 	
 	
 FinProceso
