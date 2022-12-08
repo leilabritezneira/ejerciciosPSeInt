@@ -332,7 +332,24 @@ Proceso Ejxtra exercises
 		resultado <- resultado + i;
 	FinPara
 	
-	Escribir "Su resultado es: ", resultado; 
+	Escribir "Su resultado es: ", resultado;
+	
+	//Ejercicio 2 del capitulo 6
+	
+	Definir pares, impares, i Como Entero;
+	pares<- 0;
+	impares<-0;
+	
+	Para  i<- 2 Hasta 49 Con paso 1 Hacer
+		Si i mod 2 = 0 Entonces
+			pares <- pares + i;
+		SiNo
+			impares <- impares + i;
+		FinSi
+	FinPara
+	Escribir "La suma de pares es: ", pares; 
+	Escribir "La suma de impares es: ", impares;
+	
     
 	
 	
