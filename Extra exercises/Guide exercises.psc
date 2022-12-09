@@ -378,6 +378,32 @@ Proceso Ejxtra exercises
 	Escribir "La cantidad de numeros negativos es: ",negativos;
 	Escribir "La cantidad de numeros neutros es: ",neutros;
 	
+	//Ejercicio 4 del capitulo 6	
+	
+	Definir cal,i Como Entero;
+	Definir promedio,calbaja, suma Como Real;
+	
+	suma <- 0;
+	calbaja <- 100;
+	
+	Para i<-1 Hasta 10 Hacer
+		
+		Escribir i," - Ingrese la calificacion: ";
+		Leer cal;
+		
+		suma<- suma + cal; 
+		
+		Si cal < calbaja Entonces
+			calbaja <- cal; 
+		FinSi
+		
+	FinPara
+	
+	promedio <- suma / 10; 
+	
+	Escribir "La calificacion promedio es: ",promedio;
+	Escribir "La calificiacion mas baja es: ",calbaja;
+	
 	
 FinProceso
 
