@@ -404,6 +404,29 @@ Proceso Ejxtra exercises
 	Escribir "La calificacion promedio es: ",promedio;
 	Escribir "La calificiacion mas baja es: ",calbaja;
 	
+	//Ejercicio 5 del capitulo 6
+	
+	Definir n, i, factorial Como Entero;	
+	
+	Repetir
+		
+		Escribir "Ingrese un numero: "; 
+		Leer n;
+		
+	Hasta Que n >= 0; 
+	
+	i <- 1; 
+	factorial <- 1;
+	
+	Mientras i <= n Hacer 
+		
+		factorial<- factorial * i;
+		i<- i + 1;
+		
+	FinMientras
+	
+	Escribir "Su factorial es: ", factorial;
+	
 	
 FinProceso
 
