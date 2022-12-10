@@ -574,6 +574,24 @@ Proceso Extra exercises
 		Escribir Sin Saltar " ", arrayUni[i] ;
 	FinPara
 	
+	//Ejercicio 3 del capitulo 7 
+
+	Definir arrayUni, nElementos, elemento, i Como Real; 
+	Dimension arrayUni[1000]; 
+	
+	Escribir "Ingrese la cantidad de elementos del arreglo: "; 
+	Leer nElementos;
+	
+	Para i <- 0 Hasta (nElementos -1) Con Paso 1 Hacer 
+		Escribir "Ingrese elemento para el arreglo: "; 
+		Leer elemento; 
+		arrayUni[i] <- elemento; 
+	FinPara
+	
+	Para i <- (nElementos -1) Hasta 0 Con Paso -1 Hacer 
+		Escribir Sin Saltar " ", arrayUni[i] ;
+	FinPara
+	
 	
 FinProceso
 
