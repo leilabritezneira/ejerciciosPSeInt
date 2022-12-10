@@ -444,6 +444,43 @@ Proceso Extra exercises
 		
 	Hasta Que n >= 100; 
 	
+	//Ejercicio 7 del capitulo 6
+
+	Definir nIngresados, i, num Como Enteros;
+	Definir sumaPares, conteoPares Como Enteros;
+	Definir sumaImpares, conteoImpares Como Enteros;
+	Definir promedioImpares Como Real;
+	
+	Escribir "Digite la cantidad de numeros a ingresar: ";
+	Leer nIngresados;
+	
+	i <- 1;
+	sumaPares <- 0;
+	conteoPares <- 0;
+	sumaImpares <- 0;
+	conteoImpares <- 0;
+	
+	Mientras i<= nIngresados Hacer
+		Escribir " Ingrese el número entero: ";
+		Leer num;
+		
+		Si num mod 2 = 0 Entonces
+			sumaPares <- sumaPares + num; 
+			conteoPares <- conteoPares + 1; 
+		SiNo 
+			sumaImpares <- sumaImpares + num;  
+			conteoImpares <- conteoImpares + 1;  
+		FinSi
+		
+		i <- i + 1;
+		
+	FinMientras
+	
+	promedioImpares <- sumaImpares / conteoImpares;
+	
+	Escribir "La suma de los números pares es: ", sumaPares;
+	Escribir "La cantidad de números pares ingresados es de: ", conteoPares;
+	Escribir "El promedio de impares es: ", promedioImpares;
 	
 FinProceso
 
