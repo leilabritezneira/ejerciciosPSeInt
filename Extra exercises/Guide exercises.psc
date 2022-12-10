@@ -557,6 +557,22 @@ Proceso Extra exercises
 	Escribir "La suma de los valores del arreglo es: " , suma; 
 	Escribir "El promedio de todos los valores del arreglo es: ", promedio;
 	
+	//Ejercicio 2 del capitulo 7 
+
+	Definir arrayUni, elementos, i Como Real; 
+	Dimension arrayUni[1000]; 
+	
+	Escribir "Ingrese la cantidad de elementos del arreglo: "; 
+	Leer elementos;
+	
+	
+	Para i <- 0 Hasta (elementos -1) Con Paso 1 Hacer 
+		arrayUni[i] <- azar(100); 
+	FinPara
+	
+	Para i <- 0 Hasta elementos Con Paso 1 Hacer 
+		Escribir Sin Saltar " ", arrayUni[i] ;
+	FinPara
 	
 	
 FinProceso
