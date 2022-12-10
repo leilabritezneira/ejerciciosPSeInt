@@ -507,6 +507,37 @@ Proceso Extra exercises
 	
 	Escribir "La suma de los salarios es: ", sumaTotal;
 	
+	//Ejercicio 10 del capitulo 6 
+
+	Definir n, minimo, num, maximo,i Como Entero;
+	
+	Repetir
+		Escribir "Ingrese cantidad de numeros a calcular: "; 
+		Leer n;
+	Hasta Que n <> 0; 
+	
+	i <- 1; 
+	maximo <- 0;
+	minimo <-10000;
+	
+	Para i<-1 Hasta n Hacer
+		
+		Escribir  "Ingrese el número: "; 
+		Leer num; 
+		
+		Si num <= minimo Entonces
+			minimo <- num; 
+		SiNo
+			Si num >= maximo Entonces
+				maximo <- num;
+			FinSi
+		FinSi
+		
+	FinPara
+	
+	Escribir "El máximo es: ", maximo; 
+	Escribir "El minimo es: ", minimo;
+	
 	
 FinProceso
 
