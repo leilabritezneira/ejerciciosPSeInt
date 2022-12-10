@@ -482,6 +482,32 @@ Proceso Extra exercises
 	Escribir "La cantidad de números pares ingresados es de: ", conteoPares;
 	Escribir "El promedio de impares es: ", promedioImpares;
 	
+	//Ejercicio 8 del capitulo 6
+
+	Definir horas, tarifa, sueldo, sumaTotal Como Real;
+	Definir i Como Enteros;
+	
+	i <- 1;
+	sumaTotal <- 0;
+	
+	Mientras i <= 5 Hacer
+		
+		Escribir " Ingrese la cantidad de horas trabajadas: ";
+		Leer horas;
+		Escribir "Ingrese la tarifa por hora" ;
+		Leer tarifa; 
+		
+		sueldo <- horas * tarifa;
+		sumaTotal <- sueldo + sumaTotal;
+		Escribir " Su sueldo es de: ", sueldo; 
+		
+		i <- i + 1;
+		
+	FinMientras
+	
+	Escribir "La suma de los salarios es: ", sumaTotal;
+	
+	
 FinProceso
 
 
