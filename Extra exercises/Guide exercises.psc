@@ -536,7 +536,27 @@ Proceso Extra exercises
 	FinPara
 	
 	Escribir "El máximo es: ", maximo; 
-	Escribir "El minimo es: ", minimo;
+	Escribir "El mínimo es: ", minimo;
+	
+	//Ejercicio 1 del capitulo 7 
+
+	Definir arrayUni, suma, i, promedio Como Real; 
+	Dimension arrayUni[5]; 
+	
+	suma <- 0;
+	
+	Para i <- 0 Hasta 4 Con Paso 1 Hacer 
+		Escribir "Ingrese un número para el arreglo"; 
+		Leer arrayUni[i];
+		suma <- suma + arrayUni[i];
+		
+	FinPara
+	
+	promedio <- suma /5; 
+	
+	Escribir "La suma de los valores del arreglo es: " , suma; 
+	Escribir "El promedio de todos los valores del arreglo es: ", promedio;
+	
 	
 	
 FinProceso
