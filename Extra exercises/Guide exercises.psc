@@ -1,4 +1,4 @@
-Proceso Ejxtra exercises
+Proceso Extra exercises
 	//Ejercicio 1 del capitulo 2
 	
 	Definir a, b, c, resultado Como Real;
@@ -409,7 +409,6 @@ Proceso Ejxtra exercises
 	Definir n, i, factorial Como Entero;	
 	
 	Repetir
-		
 		Escribir "Ingrese un numero: "; 
 		Leer n;
 		
@@ -426,6 +425,24 @@ Proceso Ejxtra exercises
 	FinMientras
 	
 	Escribir "Su factorial es: ", factorial;
+	
+	//Ejercicio 6 del capitulo 6 
+
+	Definir n, i, suma, resultado Como Entero;	
+	
+	Repetir
+		Escribir "Ingrese un numero: "; 
+		Leer n;
+		i <- 1; 
+		suma <- 0;
+		
+		Mientras i <= n Hacer 	
+			resultado<- suma + i^2;
+			i<- i + 1;
+			Escribir "Su resultado es: ", resultado;
+		FinMientras
+		
+	Hasta Que n >= 100; 
 	
 	
 FinProceso
