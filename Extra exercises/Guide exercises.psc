@@ -611,11 +611,9 @@ Proceso Extra exercises
 		
 		Si elemento <= menor Entonces
 			menor <- elemento; 
-			
 		SiNo
 			Si elemento >= mayor Entonces 
-				mayor <- elemento;
-				
+				mayor <- elemento;	
 			FinSi
 		FinSi
 		
@@ -623,6 +621,21 @@ Proceso Extra exercises
 	
 	Escribir "El numero mayor es: ", mayor; 
 	Escribir "El numero menor es: ", menor;
+	
+	//Ejercicio 5 del capitulo 7 
+
+	Definir array, i Como Entero; 
+	Dimension array[8]; 
+	
+	Para i <- 0 Hasta 7 Con Paso 1 Hacer 
+		Escribir "Ingrese el numero para el arreglo: "; 
+		Leer array[i]; 
+	FinPara
+	
+	Para i <- 0 Hasta 3 Con Paso 1 Hacer 
+		Escribir Sin Saltar " - ", array[i], " - ", array[7-i] ;
+	FinPara
+	
 	
 FinProceso
 
