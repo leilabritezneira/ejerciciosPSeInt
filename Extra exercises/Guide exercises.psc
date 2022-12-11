@@ -592,6 +592,37 @@ Proceso Extra exercises
 		Escribir Sin Saltar " ", arrayUni[i] ;
 	FinPara
 	
+	//Ejercicio 4 del capitulo 7 
+	
+	Definir arrayUni, nElementos, elemento, i Como Real; 
+	Definir mayor, menor Como Real;
+	Dimension arrayUni[1000]; 
+	
+	Escribir "Ingrese la cantidad de elementos del arreglo: "; 
+	Leer nElementos;
+	
+	Para i <- 0 Hasta (nElementos -1) Con Paso 1 Hacer 
+		Escribir "Ingrese elemento para el arreglo: "; 
+		Leer elemento; 
+		arrayUni[i] <- elemento; 
+		
+		mayor <- arrayUni[0]; 
+		menor <- arrayUni[0];
+		
+		Si elemento <= menor Entonces
+			menor <- elemento; 
+			
+		SiNo
+			Si elemento >= mayor Entonces 
+				mayor <- elemento;
+				
+			FinSi
+		FinSi
+		
+	FinPara
+	
+	Escribir "El numero mayor es: ", mayor; 
+	Escribir "El numero menor es: ", menor;
 	
 FinProceso
 
