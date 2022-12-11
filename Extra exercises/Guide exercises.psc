@@ -761,7 +761,31 @@ Proceso Extra exercises
 		Escribir Sin Saltar array[i], " ";
 	FinPara
 
+        //Ejercicio 9 del capitulo 7
 
+	Definir array, i, posicion Como Reales; 
+	Dimension array[5]; 
+	
+	Para i<- 0 Hasta 4 Con Paso 1 Hacer 
+		Escribir "Ingrese un número para el arreglo: "; 
+		Leer array[i];
+	FinPara
+	
+	Repetir 
+		Escribir "ingrese la posicion a eliminar"; 
+		Leer posicion;
+	Hasta Que  posicion >= 0 y posicion <= 4
+	
+	Para i <- posicion Hasta 3 Hacer
+		array[i] <- array[i+1];
+	FinPara
+	
+	Escribir "El nuevo arreglo es: "; 
+	Para i <- 0 Hasta 3 Hacer 
+		Escribir array[i];
+	FinPara
+	
+ 
 
 	
 FinProceso
