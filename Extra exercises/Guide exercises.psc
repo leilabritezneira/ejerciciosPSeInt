@@ -636,6 +636,41 @@ Proceso Extra exercises
 		Escribir Sin Saltar " - ", array[i], " - ", array[7-i] ;
 	FinPara
 	
+	//Ejercicio 6 del capitulo 7 
+
+	Definir creciente, decreciente Como Logico;
+	Definir array, i Como Reales; 
+	Dimension array[5]; 
+	
+	Para i<- 0 Hasta 4 Con Paso 1 Hacer 
+		Escribir "Ingrese un número para el arreglo: "; 
+		Leer array[i];
+	FinPara
+	
+	creciente <- Falso;
+	decreciente <- Falso;
+	
+	Para i<- 0 Hasta 	3 Con Paso 1 Hacer
+		Si array[i] < array[i+1] Entonces
+			creciente <- Verdadero;
+		FinSi
+		
+		Si array[i] > array[i+1] Entonces
+			decreciente <- Verdadero;
+		FinSi
+	FinPara
+	
+	Si creciente = Verdadero y decreciente = Falso Entonces
+		Escribir "El arreglo es creciente"; 
+	SiNo
+		Si creciente = Falso y decreciente = Verdadero Entonces
+			Escribir "El arreglo es decreciente"; 
+		SiNo
+			Escribir "El arreglo es desordenado"; 
+		FinSi
+	FinSi
+	
+
 	
 FinProceso
 
