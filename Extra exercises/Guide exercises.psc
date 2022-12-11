@@ -670,6 +670,26 @@ Proceso Extra exercises
 		FinSi
 	FinSi
 	
+	//Ejercicio 7 del capitulo 7 
+	//*Proceso arreglos   YO*
+	Definir array, i Como Reales; 
+	Dimension array[6]; 
+	
+	Para i<- 0 Hasta 5 Con Paso 1 Hacer 
+		Escribir "Ingrese un número para el arreglo: "; 
+		Leer array[i];
+	FinPara
+	
+	Para i<- 5  Hasta 5 Hacer
+		Escribir sin saltar array[i];
+		
+	FinPara
+	
+	Para i<- 0 Hasta 4 Con Paso 1 Hacer
+		Escribir sin saltar " - ", array[i];
+		
+	FinPara
+
 
 	
 FinProceso
