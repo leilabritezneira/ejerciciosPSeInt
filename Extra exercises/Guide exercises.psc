@@ -712,6 +712,55 @@ Proceso Extra exercises
 	Para i<- 0 Hasta 5 Con Paso 1 Hacer
 		Escribir sin saltar " - ", array[i];
 	FinPara
+	
+	//Ejercicio 8 del capitulo 7 
+
+	Definir array, i, posicion, dato, j Como Reales; 
+	Dimension array[6]; 
+	Definir creciente Como Logico;
+	
+	Repetir 
+		creciente <-verdadero; 
+		
+		Para i<- 0 Hasta 4 Con Paso 1 Hacer 
+			Escribir "Ingrese un número para el arreglo: "; 
+			Leer array[i];
+		FinPara
+		
+		Para i<-0 Hasta 3 Hacer
+			Si array[i] > array[i+1] Entonces
+				creciente <- Falso;
+			FinSi
+			Si creciente = Falso Entonces; 
+				Escribir "El arreglo no esta ordenado, intente nuevamente.";
+			FinSi
+		FinPara
+		
+	Hasta Que creciente = Verdadero 
+	
+	Escribir "Ingrese el valor a agregar"; 
+	Leer dato; 
+	
+	posicion <- 0;
+	j<- 0;
+	
+	Mientras array[j] < dato y j < 5 Hacer	
+		posicion<- posicion + 1;
+		j <- j +1;
+	FinMientras
+	
+	Para i <-4 Hasta posicion Con Paso -1 Hacer
+		array[i+1] <- array [i];
+	FinPara
+	
+	array[posicion] <- dato; 
+	
+	Escribir "El nuevo arreglo es: ";
+	
+	Para i <- 0 Hasta 5 Hacer
+		Escribir Sin Saltar array[i], " ";
+	FinPara
+
 
 
 	
