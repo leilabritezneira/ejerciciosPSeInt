@@ -689,6 +689,29 @@ Proceso Extra exercises
 		Escribir sin saltar " - ", array[i];
 		
 	FinPara
+	
+	//PROFE
+	
+	Definir array, ultimo, i Como Reales; 
+	Dimension array[6]; 
+	
+	Para i<- 0 Hasta 5 Con Paso 1 Hacer 
+		Escribir "Ingrese un número para el arreglo: "; 
+		Leer array[i];
+	FinPara
+	
+	ultimo <- array[5];
+	
+	Para i<- 4  Hasta 0 Con Paso -1 Hacer
+		array[i+1] <- array[i];
+	FinPara
+	
+	array[0] <- ultimo;
+	
+	Escribir "El nuevo arreglo es: ";
+	Para i<- 0 Hasta 5 Con Paso 1 Hacer
+		Escribir sin saltar " - ", array[i];
+	FinPara
 
 
 	
